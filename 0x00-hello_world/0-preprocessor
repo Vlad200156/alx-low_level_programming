@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -E $CFIlE -o main.c
