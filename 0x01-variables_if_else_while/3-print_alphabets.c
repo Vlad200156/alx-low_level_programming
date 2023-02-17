@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print the alphabet in lowercase and uppercase
- *
+ * Description: using the main function
  * Return: 0 always
  */
 int main(void)
