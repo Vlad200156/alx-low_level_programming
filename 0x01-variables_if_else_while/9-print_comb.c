@@ -1,22 +1,30 @@
-#include <stdio.h>
- /**
-  * main - Prints all possible combinations of single-digit numbers.
-  * Description: using the main function
-  * Return: 0 always
-  */
+#include<stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: print 0, 1, - 9
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-/*your code goes here*/
-int c;
-for (c = 48; c <= 57; c++)
-{
-putchar(c);
-if (c != 57)
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+	int digit = 0;
+
+	while (digit <= 9)
+	{
+		putchar(digit + 48);
+
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		++digit;
+	}
+	putchar('\n');
+
+	return (0);
 }

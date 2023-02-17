@@ -1,17 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - prints the lowercas alphabet in revers
- * Description: using the main function
+ * main - prints all number of base 16 in lowercas
  * Return: 0 always
  */
 int main(void)
 {
-/*your code goes here*/
-char ch;
-for (ch = 'z'; ch >= 'a'; ch--)
-{
-putchar(ch);
-}
-putchar('\n');
-return (0);
+	char c;
+
+	for (c = '0' ; c <= '9' ; c++)
+	{
+		putchar(c);
+	}
+	for (c = 'a' ; c <= 'f' ; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
