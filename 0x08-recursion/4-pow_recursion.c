@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * factorial - returns the factorial of a number
- *
- * @n: number that will be evaluated
- *
- * Return: the factorial of n, if n < 0 return -1
+ * _pow_recursion - pow recursion
+ * @x: integer params
+ * @y: integer paramtr
+ * Return: recursion
  */
-int factorial(int n)
+
+
+int _pow_recursion(int x, int y)
 {
-	if (n == 0)
-	{
-		return (1);
-	}
-	if (n < 0)
+	if (y < 0)
 	{
 		return (-1);
 	}
-	return (n * factorial(n - 1));
+	if (y == 0)
+	{
+		return (1);
+	}
+	return (x * _pow_recursion(x, y - 1));
 }
+
