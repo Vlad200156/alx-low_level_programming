@@ -3,7 +3,7 @@
 /**
   * add_nodeint_end - add node at end of a listint_t list.
   *
-  * @head: head of a double pointer
+  * @head: head of double pointer
   * @n: int add the list
   * Return: NULL if it failed
   */
